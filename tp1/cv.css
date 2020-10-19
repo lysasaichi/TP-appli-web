@@ -1,14 +1,38 @@
 
 body{
-    background-color: rgb(255, 236, 236);             
+    background-color: background: #d53369;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cbad6d, #d53369);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cbad6d, #d53369); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin: 0 auto;
-    max-width: 800px;              
-}
-table{
-    box-shadow: 0px 2px 5px #1c1a19;
+    max-width: 800px;  
+    padding: 30px 30px;            
 }
 h1.titre{
     text-align: center;
+    font-family:Times new Roman,  Helvetica, sans-serif;
+   
 }
+
+
+ 
+  table {
+    background-color: background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    box-shadow: 10px 2px 5px hsl(283, 91%, 35%);
+  }
+  img.profil {
+    height: 200px;
+    width: 170px;
+    display: block;
+    margin-left: 600px;
+    border-radius: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+   
