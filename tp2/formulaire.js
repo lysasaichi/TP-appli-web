@@ -25,6 +25,4 @@ function validation(){
       document.getElementById("error").classList.remove("display")
       document.getElementById("resultat").classList.add("display")
     
-    }
-
-}
+  }
