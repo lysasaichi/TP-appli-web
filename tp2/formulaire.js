@@ -20,9 +20,9 @@ function validation(){
   }
   if(document.getElementById("error").innerHTML == ""){
       var Nom = document.querySelector("#Nom").value;
-      document.getElementById("error").innerHTML =`La saisie du nom est obligatoire`;
       document.getElementById("resultat").innerHTML = `Bienvenue ${Nom}`;
       document.getElementById("error").classList.remove("display")
       document.getElementById("resultat").classList.add("display")
     
   }
+}
