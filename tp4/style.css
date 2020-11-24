@@ -1,0 +1,30 @@
+body{
+                 
+    font-family: 'Comic sans ms, Times, serif';
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 900px; 
+background: #E8CBC0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #80c1c5, #e9dec7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7ad4e4, #ecd5b3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding: 50px 50px;
+box-shadow: 5px 5px 10px #1c1a19;            
+
+}
+p.titre{
+    text-align: center;
+    font-family:Times new Roman,  Helvetica, sans-serif;
+    font-size: 40px;
+    background-color: rgb(80, 177, 161);
+    box-shadow: 5px 10px 10px #1c1a19;
+    color: white;
+    
+}
+
+label{
+     font-family: 'Arial';
+      width: 150px;
+      display: inline-block;
+      text-align: left;
+}
+  
