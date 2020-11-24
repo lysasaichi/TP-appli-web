@@ -1,33 +1,23 @@
 $( document ).ready(function() {
+    console.log( "DOM ready!" );
     
-     console.log( "DOM ready!" );
-     
-     $("#valider").click(function (event) {
+    $("#valider").click(function (event) {
+       event.preventDefault();
+   
+       if (($("#nom").val() && $("#prenom").val() && $("#date").val() && $("#adresse").val() && $("#mail").val()) != "") {
+           $("#myModal").modal("show");
+           $(".modal-title").text("Bienvenue " + $("#prenom").val());
+           var city = $("#adresse").val();
+           var date = $("#date").val();
+           $(".modal-body").html(`Vous êtes nés ${date} et vous habitez :
+           <a class="link"  href="http://maps.google.com/maps?" ><img src="https://maps.googleapis.com/maps/api/staticmap?markers=${city}&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"/> Lien Google Maps </a>`);
+         } 
+       else {
 
-        event.preventDefault();
+           $("#myModal").modal("show")
+           $(".modal-body").html('Veuillez remplir tous les champs demander s\'il vous plait');
 
-    
-        if (($("#Nom").val() && $("#Prénom").val() && $("#Date").val() && $("#Adresse").val() && $("#E-mail").val()) != "") {
+       }
+   });
 
-
-            $("#myModal").modal("show");
-            $(".modal-title").text("Bienvenue " + $("#Prénom").val());
-
-            var city = $("#Adresse").val();
-            var Date = $("#Date").val();
-
-            $(".modal-body").html(`Vous êtes nés ${Date} et vous habitez :
-            <a class="link"  href="http://maps.google.com/maps?" ><img src="https://maps.googleapis.com/maps/api/staticmap?markers=${city}&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"/> Lien Google Maps </a>`);
-            
-
-        } else {
-
-            $("#myModal").modal("show")
-            $(".modal-body").html('Veuillez remplir tous les champs s\'il vous plait');
-            
-
-        }
-    });
-
- });
- 
+});
