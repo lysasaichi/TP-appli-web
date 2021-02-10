@@ -1,0 +1,19 @@
+body{
+                 
+    font-family: 'Comic sans ms, Times, serif';
+    font-size: 20px;
+    max-width: 900px; 
+    background: linear-gradient(to right, #05adb3, #e0f7bb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 50px 20px;
+                
+       
+
+}
+.titre{
+    text-align: center;
+    font-family:Times new Roman,  Helvetica, sans-serif;
+    font-size: 40px;
+    color: rgb(32, 84, 151);
+    box-shadow: 20px 20px 20px #1c1a19;    
+}
+
